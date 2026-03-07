@@ -1,0 +1,60 @@
+.layout {
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.layout-main {
+  padding: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 12px 0;
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.75rem;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  color: var(--text-primary);
+}
+
+.nav-item.active {
+  background: var(--accent);
+  color: white !important;
+  padding: 12px 24px;
+  border-radius: 50px;
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+}
+
+.nav-scan {
+  /* keeps scan in the center; bubble is now controlled by .nav-item.active */
+}
+
+.nav-item.active:hover {
+  background: var(--accent-hover);
+}

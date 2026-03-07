@@ -1,0 +1,38 @@
+.contact-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.contact-modal {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 24px 20px 20px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.contact-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.contact-modal-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+}
+

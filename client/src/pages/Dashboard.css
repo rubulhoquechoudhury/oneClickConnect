@@ -1,0 +1,191 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.greeting {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.icon-btn {
+  background: var(--bg-card);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.qr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 16px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.qr-card:hover {
+  transform: translateY(-2px);
+}
+
+.qr-card-primary {
+  background: linear-gradient(135deg, var(--accent), #0d6efd);
+}
+
+.qr-card-secondary {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.qr-card-icon {
+  font-size: 2rem;
+}
+
+.qr-card-icon .qr-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+.recent-contacts {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.see-all {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  border: none;
+  background: var(--bg-card);
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  transition: background 0.2s;
+}
+
+.contact-item:hover {
+  background: var(--bg-secondary);
+}
+
+.contact-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-name {
+  font-weight: 600;
+}
+
+.contact-role {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.contact-arrow {
+  color: var(--text-secondary);
+}
+
+.contact-item:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.empty-state {
+  padding: 32px;
+  text-align: center;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+}
+
+.tip-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 20px;
+  position: relative;
+}
+
+.tip-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.tip-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.tip-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
