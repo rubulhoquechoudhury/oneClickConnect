@@ -17,7 +17,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Allow multiple origins so production (Vercel) + dev work
-const allowedOrigins = (process.env.FRONTEND_URL || 'http://localhost:5173,http://localhost:3000,https://net-pulse-wine.vercel.app')
+const allowedOrigins = (process.env.FRONTEND_URL || 'http://localhost:5173,http://localhost:3000,https://net-pulse-wine.vercel.app,https://net-pulse2.vercel.app')
   .split(',')
   .map(s => s.trim());
 app.use(cors({
