@@ -62,6 +62,9 @@ router.post('/register', async (req, res) => {
 // Login
 router.post('/login', async (req, res) => {
   try {
+    if (!process.env.JWT_SECRET) {
+      return res.status(503).json({ error: 'Server configuration error' });
+    }
     const { email, password } = req.body;
     if (!email || !password) {
       return res.status(400).json({ error: 'Email and password required' });
