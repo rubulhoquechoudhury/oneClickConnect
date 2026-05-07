@@ -1,6 +1,6 @@
-# One Contact
+# oneClickConnect
 
-One Contact is a web app to share your personal social and contact links with just one QR scan.
+oneClickConnect is a web app to share your personal social and contact links with just one QR scan.
 
 ## Why I Built This
 
@@ -14,11 +14,11 @@ We often exchange multiple details like:
 Saving every single contact manually on the phone is a hassle and takes too much time.
 Even when we collect business cards, we often forget to save those details later.
 
-So I built **One Contact** to make networking faster and easier.
+So I built **oneClickConnect** to make networking faster and easier.
 
 ## What It Does
 
-With NetPulse, you can:
+With oneClickConnect, you can:
 - create your profile with important social/contact links
 - generate your personal QR code
 - let others scan once and instantly access your details

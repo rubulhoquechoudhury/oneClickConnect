@@ -51,7 +51,7 @@ export default function Home() {
       <header className="auth-header">
         <div className="logo">
           <span className="logo-icon">▣</span>
-          <span>NetPulse</span>
+          <span>oneClickConnect</span>
         </div>
         <a href="#" className="help-link">Help</a>
       </header>

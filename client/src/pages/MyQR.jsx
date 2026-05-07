@@ -63,9 +63,9 @@ export default function MyQR() {
           onClick={() => {
             if (navigator.share && qr?.profileUrl) {
               navigator.share({
-                title: 'My NetPulse Profile',
+                title: 'My oneClickConnect Profile',
                 url: qr.profileUrl,
-                text: 'Connect with me on NetPulse!'
+                text: 'Connect with me on oneClickConnect!'
               }).then(() => addToast('Shared!', 'success')).catch(() => copyLink());
             } else {
               copyLink();
